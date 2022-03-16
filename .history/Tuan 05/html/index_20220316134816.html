@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function KiemTraTenDN(){
+            var re = /^[a-z]*w/;
+            if(re.test(document.getElementById('txtDN').value.trim()) == false){
+                tendn.innerText
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 align = "center">DANG KY TAI KHOAN</h2>
+    <form action="#" onsubmit="SubmitForm();" method="post" name="form1"></form>
+
+    <div>
+        <label for="txtDN" class="title">Ten dang nhap: </label>
+        <input id="txtDN" onblur="return KiemTraTenDN();" type="text" name="txtdn" size="30" placeholder="txtDN" /><span id="tendn"> * </span>
+    </div>
+    <div>
+        <label for="txtMK" class="title">Mat khau:  </label>
+        <input id="txtMK" onblur="return KiemTraPassword();" type="password" name="txtmk" size="30" placeholder="txtMK" /><span id="mk"> * </span>
+    </div>
+    <div>
+        <label for="txtXNMK" class="title">Nhap lai mat khau: </label>
+        <input id="txtXNMK" onblur="return KiemTraXacNhanPassword();" type="password" name="txtXNMK" size="30" placeholder="txtXNMK" /><span id="xnmk"> * </span>
+    </div>
+
+    <h5 align="center">THONG TIN CA NHAN</h5>
+    <div>
+        <label for="txTName" class="title">Ho va ten: </label>
+        <input type="text" id="txtName" name="txtName" size="30" placeholder="txtName" /><span id="hoten"> * bac buoc </span>
+    </div>
+    <div>
+        <label for="txTNS" class="title">Nam sinh: </label>
+        <input type="date" id="txtNS" name="txtNS" size="30" placeholder="txtNS" onblur="return KiemTraNgaySinh();"/><span id="ngaysinh">..</span>
+    </div class="radio-buttons">
+    <div>
+        <span class="title">Gioi tinh: </span>
+        <input type="radio" name="genger" id="male" value="M" checked>
+        <label for="male">Nam</label>
+        <input type="radio" name="genger" id="female" value="F" checked>
+        <label for="female">Nu</label>
+    </div>
+    <div>
+        <label for="txtDC" class="title">Dia chi: </label>
+        <input type="text" name="txtDC" id="txtDC" size="30" placeholder="txtDC" /><span id="diachi"> . </span>
+    </div>
+    <div>
+        <label for="txtDT" class="title">Dien thoai: </label>
+        <input type="text" name="txtDT" id="txtDT" size="30" placeholder="txtDT" /><span id="dienthoai"> phai la so </span>
+    </div>
+    <div>
+        <label for="txtEmail" class="title">Email: </label>
+        <input type="email" name="txtEmail" id="txtEmail" size="30" placeholder="txtEmail" /><span id="emial"> nhap dung dia chi email </span>
+    </div>
+
+    <div class="submit">
+        <input type="submit" name="Dang ky" id="submit">
+        <input type="reset" name="Huy" id="submit">
+    </div>
+</body>
+</html>

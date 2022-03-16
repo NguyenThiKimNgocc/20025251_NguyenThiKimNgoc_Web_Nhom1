@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function KiemTraTenDN(){
+            var re = /^[a-z]*w/;
+            if(re.test(document.getElementById('txtDN').value.trim()) == false){
+                tendn.innerText
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 align = "center">DANG KY TAI KHOAN</h2>
+    <form action="#" onsubmit="SubmitForm();" method="post" name="form1"></form>
+
+    <div>
+        <label for="txtDN" class="title">Ten dang nhap: </label>
+        <input id="txtDN" onblur="return KiemTraTenDN();" type="text" name="txtdn" size="30" placeholder="txtDN" /><span id="tendn">*</span>
+    </div>
+</body>
+</html>
